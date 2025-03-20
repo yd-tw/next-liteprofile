@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
+import { achievementsList } from "@/config/hero";
 import dynamic from "next/dynamic";
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -81,21 +82,6 @@ export default function HeroSection() {
     </section>
   );
 }
-
-type Achievement = {
-  metric: string;
-  value: string;
-  postfix?: string;
-  prefix?: string;
-};
-
-const achievementsList: Achievement[] = [
-  { metric: "APCS", value: "4", postfix: "級" },
-  { metric: "競賽獲獎", value: "20", postfix: "+" },
-  { metric: "服務使用者", value: "1000", postfix: "+" },
-  { metric: "專案數量", value: "30", postfix: "+" },
-  { metric: "社群追蹤數", value: "150", postfix: "+" },
-];
 
 function AchievementsSection() {
   return (

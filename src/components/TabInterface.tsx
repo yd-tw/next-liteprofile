@@ -2,11 +2,11 @@
 
 import { useTransition, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { tabinterface } from "@/config/tabinterface";
+import { tabinfo } from "@/config/tabinfo";
 
 export default function TabInterface() {
-  type TabKey = keyof typeof tabinterface;
-  const tabKeys = Object.keys(tabinterface) as TabKey[];
+  type TabKey = keyof typeof tabinfo;
+  const tabKeys = Object.keys(tabinfo) as TabKey[];
   const [tab, setTab] = useState<TabKey>(tabKeys[0] || "比賽");
   const [, startTransition] = useTransition();
 
@@ -60,7 +60,7 @@ export default function TabInterface() {
               className="absolute w-full"
             >
               <ul className="pl-2">
-                {tabinterface[tab].content.map((line, index) => (
+                {tabinfo[tab].content.map((line, index) => (
                   <li key={index}>{line}</li>
                 ))}
               </ul>

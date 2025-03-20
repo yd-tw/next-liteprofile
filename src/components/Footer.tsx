@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { base } from "@/config/base";
 import pkg from "../../package.json";
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
     <footer className="footer border-t bg-orange-900 text-white">
       <div className="container mx-auto flex flex-col items-center gap-6 px-4 py-8 md:flex-row md:justify-center md:px-12">
         <div className="text-center md:text-left">
-          <span className="text-lg font-semibold">tomocat.com</span>
+          <span className="text-lg font-semibold">{base.title}</span>
           <p className="mt-1 text-gray-300">All rights reserved 2025</p>
           <p className="text-gray-300">{`Web version: ${pkg.version}`}</p>
         </div>

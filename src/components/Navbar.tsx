@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { base } from "@/config/base"
 import { Icon } from "@iconify/react";
 
 const navLinks = [{ title: "部落格", path: "/blogs" }];
@@ -13,7 +14,7 @@ export default function Navbar() {
     <nav className="sticky left-0 right-0 top-0 z-50 mx-auto bg-orange-200">
       <div className="container mx-auto h-16 flex flex-wrap items-center justify-between px-4 py-2">
         <Link href={"/"} className="text-3xl font-semibold text-black">
-          tomocat
+          {base.title}
         </Link>
         <div className="hidden md:block md:w-auto">
           <ul className="mt-0 flex p-4 md:flex-row md:space-x-8 md:p-0">

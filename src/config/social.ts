@@ -1,4 +1,10 @@
-export default [
+type Social = {
+  name: string;
+  href: string;
+  icon: string;
+};
+
+export const social: Social[] = [
   {
     name: "Github: yd-tw",
     href: "https://github.com/yd-tw",

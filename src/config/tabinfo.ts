@@ -1,4 +1,16 @@
-export const tabinterface = {
+type Tabinfo = {
+  比賽: {
+    content: string[];
+  };
+  技能: {
+    content: string[];
+  };
+  團隊: {
+    content: string[];
+  };
+};
+
+export const tabinfo: Tabinfo = {
   比賽: {
     content: [
       "APCS 大學程式設計先修檢測 - 四級",
@@ -24,16 +36,4 @@ export const tabinterface = {
       "中和高中機器人社 - 活動長",
     ],
   },
-};
-
-type Data = {
-  比賽: {
-    content: string[];
-  };
-  技能: {
-    content: string[];
-  };
-  團隊: {
-    content: string[];
-  };
 };
