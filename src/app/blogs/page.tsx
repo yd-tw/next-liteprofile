@@ -1,4 +1,4 @@
-import BlogList from "@/components/BlogList";
+import BlogList from "@/components/BlogSection";
 
 export const metadata = {
   title: "部落格",

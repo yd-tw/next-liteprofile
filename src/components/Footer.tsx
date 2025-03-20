@@ -11,7 +11,6 @@ export default function Footer() {
           <p className="mt-1 text-gray-300">All rights reserved 2025</p>
           <p className="text-gray-300">{`Web version: ${pkg.version}`}</p>
         </div>
-
         <div className="flex space-x-6">
           <Link href="https://github.com/" aria-label="GitHub">
             <Icon

@@ -1,9 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import TabInformation from "@/components/TabInformation";
+import Projects from "@/components/Projects";
+import TabInterface from "@/components/TabInterface";
 import Contest from "@/components/Contest";
-import BlogList from "@/components/BlogList";
+import BlogSection from "@/components/BlogSection";
 
 export default function Home() {
   return (
@@ -11,10 +11,10 @@ export default function Home() {
       <div className="container mx-auto p-6">
         <HeroSection />
         <AboutSection />
-        <TabInformation />
+        <TabInterface />
         <Contest />
-        <ProjectsSection />
-        <BlogList limit={5} />
+        <Projects />
+        <BlogSection limit={5} />
       </div>
     </main>
   );

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getAllPosts } from "next-staticblog";
 
-export default function BlogList({ limit }: { limit?: number }) {
+export default function BlogSection({ limit }: { limit?: number }) {
   const posts = getAllPosts()
     .sort(
       (a, b) =>
