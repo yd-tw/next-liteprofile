@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import dynamic from "next/dynamic";
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {

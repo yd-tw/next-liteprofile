@@ -24,19 +24,13 @@ export default function Footer() {
               className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
             />
           </Link>
-          <Link
-            href="https://www.facebook.com/"
-            aria-label="Facebook"
-          >
+          <Link href="https://www.facebook.com/" aria-label="Facebook">
             <Icon
               icon="mdi:facebook"
               className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
             />
           </Link>
-          <Link
-            href="https://www.instagram.com/"
-            aria-label="Instagram"
-          >
+          <Link href="https://www.instagram.com/" aria-label="Instagram">
             <Icon
               icon="mdi:instagram"
               className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"

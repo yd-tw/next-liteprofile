@@ -5,7 +5,7 @@ import { motion, useInView } from "motion/react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
-import projects from "../../config/project.json";
+import { projects } from "@/config/project";
 
 export default function ProjectsSection() {
   const [tag, setTag] = useState<string>("精選");

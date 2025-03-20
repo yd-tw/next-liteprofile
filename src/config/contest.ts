@@ -1,0 +1,57 @@
+type Contest = {
+  name: string;
+  rank: string;
+  about: string;
+  official: string;
+};
+
+export const contest: Contest[] = [
+  {
+    name: "111學年 新北市學科能力競賽",
+    rank: "新北複賽",
+    about: "",
+    official: "",
+  },
+  {
+    name: "2024 台灣國際資訊奧林匹亞競賽",
+    rank: "全國207名",
+    about: "",
+    official: "",
+  },
+  {
+    name: "2020 TIRT全能機器人國際邀請賽",
+    rank: "第三名",
+    about: "",
+    official: "",
+  },
+  {
+    name: "111學年 中和高中資訊學科能力競賽",
+    rank: "第四名",
+    about: "",
+    official: "",
+  },
+  {
+    name: "112學年 中和高中資訊學科能力競賽",
+    rank: "第五名",
+    about: "",
+    official: "",
+  },
+  {
+    name: "112學年 中和高中校內科展",
+    rank: "電腦科學佳作",
+    about: "",
+    official: "",
+  },
+  {
+    name: "112學年 中和高中校內科展",
+    rank: "工程學科一佳作",
+    about: "",
+    official: "",
+  },
+  {
+    name: "智慧科技素養與程式設計創新應用競賽",
+    rank: "第三名",
+    about: "",
+    official: "",
+  },
+];

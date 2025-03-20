@@ -1,4 +1,4 @@
-import contest from "../../config/contest.json";
+import { contest } from "@/config/contest";
 
 export default function Contest() {
   return (

@@ -4,9 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 
-const navLinks = [
-  { title: "部落格", path: "/blogs" },
-];
+const navLinks = [{ title: "部落格", path: "/blogs" }];
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
