@@ -13,13 +13,7 @@ export default function AboutSection() {
         />
         <div className="mt-4 flex h-full flex-col justify-center text-left text-2xl md:mt-0">
           <h2 className="mb-4 text-4xl font-bold">關於我</h2>
-          <p className="text-base lg:text-lg">
-            {about.contect}
-          </p>
-          <br />
-          <p className="text-base lg:text-lg">
-
-          </p>
+          <p className="text-base lg:text-lg">{about.contect}</p>
         </div>
       </div>
     </section>

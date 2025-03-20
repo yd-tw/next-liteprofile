@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
   return (
     <section
-      className="bg-orange-100 dark:bg-gray-800 p-4 my-8 rounded-xl"
+      className="p-4 my-8 rounded-xl border border-gray-300"
       id="projects"
     >
       <h2 className="my-4 text-center text-4xl font-bold text-orange-500">
@@ -135,7 +135,7 @@ export function ProjectCard({
           </Link>
         </div>
       </div>
-      <div className="rounded-b-xl bg-orange-300 px-4 py-6">
+      <div className="rounded-b-xl bg-orange-50 px-4 py-6">
         <h5 className="mb-2 text-xl font-semibold text-black">{title}</h5>
         <p className="text-gray-700">{description}</p>
       </div>

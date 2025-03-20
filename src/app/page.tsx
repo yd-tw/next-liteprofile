@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import TabInterface from "@/components/TabInterface";
 import Contest from "@/components/Contest";
 import BlogSection from "@/components/BlogSection";
+import SocialLink from "@/components/SocialLink";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Contest />
         <Projects />
         <BlogSection limit={5} />
+        <SocialLink />
       </div>
     </main>
   );
