@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Icon } from "@iconify/react";
 import { base } from "@/config/base";
 import pkg from "../../package.json";
+import { FaFacebook, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -12,30 +12,19 @@ export default function Footer() {
           <p className="mt-1">All rights reserved 2025</p>
           <p className="">{`Web version: ${pkg.version}`}</p>
         </div>
+
         <div className="flex space-x-6">
           <Link href="https://github.com/" aria-label="GitHub">
-            <Icon
-              icon="mdi:github"
-              className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
-            />
+            <FaGithub size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
           </Link>
           <Link href="https://www.youtube.com/" aria-label="YouTube">
-            <Icon
-              icon="mdi:youtube"
-              className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
-            />
+            <FaYoutube size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
           </Link>
           <Link href="https://www.facebook.com/" aria-label="Facebook">
-            <Icon
-              icon="mdi:facebook"
-              className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
-            />
+            <FaFacebook size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
           </Link>
           <Link href="https://www.instagram.com/" aria-label="Instagram">
-            <Icon
-              icon="mdi:instagram"
-              className="cursor-pointer text-2xl transition duration-300 hover:text-gray-400"
-            />
+            <FaInstagram size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
           </Link>
         </div>
       </div>
