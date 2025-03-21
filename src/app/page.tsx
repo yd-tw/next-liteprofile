@@ -5,6 +5,7 @@ import TabInterface from "@/components/TabInterface";
 import Contest from "@/components/Contest";
 import BlogSection from "@/components/BlogSection";
 import SocialLink from "@/components/SocialLink";
+import Radar from "@/components/Radar";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="container mx-auto p-6">
         <HeroSection />
         <AboutSection />
+        <Radar />
         <TabInterface />
         <Contest />
         <Projects />

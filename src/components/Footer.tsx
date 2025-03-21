@@ -15,16 +15,28 @@ export default function Footer() {
 
         <div className="flex space-x-6">
           <Link href="https://github.com/" aria-label="GitHub">
-            <FaGithub size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
+            <FaGithub
+              size={24}
+              className="cursor-pointer transition duration-300 hover:text-gray-400"
+            />
           </Link>
           <Link href="https://www.youtube.com/" aria-label="YouTube">
-            <FaYoutube size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
+            <FaYoutube
+              size={24}
+              className="cursor-pointer transition duration-300 hover:text-gray-400"
+            />
           </Link>
           <Link href="https://www.facebook.com/" aria-label="Facebook">
-            <FaFacebook size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
+            <FaFacebook
+              size={24}
+              className="cursor-pointer transition duration-300 hover:text-gray-400"
+            />
           </Link>
           <Link href="https://www.instagram.com/" aria-label="Instagram">
-            <FaInstagram size={24} className="cursor-pointer transition duration-300 hover:text-gray-400" />
+            <FaInstagram
+              size={24}
+              className="cursor-pointer transition duration-300 hover:text-gray-400"
+            />
           </Link>
         </div>
       </div>
