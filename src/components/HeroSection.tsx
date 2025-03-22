@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
-import { achievementsList } from "@/config/hero";
+import { hero } from "@/config/hero";
 import dynamic from "next/dynamic";
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -23,39 +23,32 @@ export default function HeroSection() {
         >
           <h1 className="mb-4 text-2xl font-extrabold md:text-4xl lg:text-7xl lg:leading-normal">
             <span className="bg-linear-to-r from-red-500 to-orange-600 bg-clip-text text-4xl text-transparent md:text-6xl lg:text-8xl">
-              我是 tomocat{" "}
+              {hero.title}{" "}
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "擔任機器人社活動長",
-                1000,
-                "創辦程式貓教育社群",
-                1000,
-                "擔任FRC程式組組長",
-                1000,
-              ]}
+              sequence={hero.typeAnimationTexts}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
           <p className="mb-6 text-base sm:text-lg lg:text-xl">
-            一位立志成為軟體工程師的高中生自我介紹
+            {hero.description}
           </p>
           <div>
             <Link
-              href="/link"
-              className="mr-4 inline-block w-full rounded-full bg-linear-to-br from-orange-500 to-purple-500 px-6 py-3 text-white hover:bg-blue-600 sm:w-fit"
+              href="#about"
+              className="mr-4 inline-block w-32 rounded-full bg-linear-to-br from-orange-500 to-purple-500 px-6 py-3 text-white hover:bg-blue-600 sm:w-fit"
             >
-              聯絡我
+              關於我
             </Link>
             <Link
-              href="https://github.com/yd-tw"
-              className="mt-3 inline-block w-full rounded-full bg-linear-to-br from-orange-500 to-purple-500 px-1 py-1 text-white hover:bg-blue-600 sm:w-fit"
+              href="/blogs"
+              className="mt-3 inline-block w-32 rounded-full bg-linear-to-br from-orange-500 to-purple-500 px-1 py-1 text-white hover:bg-blue-600 sm:w-fit"
             >
               <span className="block rounded-full bg-black px-5 py-2 hover:bg-gray-800">
-                前往我的Github主頁
+                部落格
               </span>
             </Link>
           </div>
@@ -87,7 +80,7 @@ function AchievementsSection() {
   return (
     <div className="px-4 py-8 sm:py-16 xl:gap-16 xl:px-16">
       <div className="flex flex-col items-center justify-between rounded-md px-16 py-8 sm:flex-row sm:border sm:border-gray-500">
-        {achievementsList.map((achievement, index) => (
+        {hero.achievementsList.map((achievement, index) => (
           <div
             key={index}
             className="mx-4 my-4 flex flex-col items-center justify-center sm:my-0"

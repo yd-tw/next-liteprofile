@@ -19,9 +19,6 @@ export default function Contest() {
                 <button className="mr-4 rounded-sm bg-orange-900 px-4 py-1 hover:bg-orange-600">
                   比賽經歷
                 </button>
-                <button className="mr-4 rounded-sm bg-orange-900 px-4 py-1 hover:bg-orange-600">
-                  官方連結
-                </button>
               </div>
             </div>
           </div>

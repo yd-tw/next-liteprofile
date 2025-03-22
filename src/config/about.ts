@@ -1,8 +1,10 @@
 type About = {
+  image: string;
   contect: string;
 };
 
 export const about: About = {
+  image: "/images/CodeCat.jpg",
   contect: `從一接觸到程式開始，就十分喜愛這種自動化，虛實整合的魅力。相較於其他傳統領域，
             資訊科學是一門入門門檻較低的領域，也是最有發展潛力的領域。從國小我就開始自學，
             漸漸也確定了自己對這個領域的喜愛。
