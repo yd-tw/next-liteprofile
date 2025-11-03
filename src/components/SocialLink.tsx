@@ -16,7 +16,7 @@ export default function SocialLink() {
             rel="noopener noreferrer"
           >
             <div className="flex transform flex-row items-center gap-6 rounded-lg bg-white p-4 shadow-sm transition duration-300 hover:bg-gray-100">
-              <span className="transform transition hover:rotate-3 hover:scale-110">
+              <span className="transform transition hover:scale-110 hover:rotate-3">
                 <Icon
                   icon={link.icon}
                   width="50"

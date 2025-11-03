@@ -25,7 +25,7 @@ export default function ProjectsSection() {
 
   return (
     <section
-      className="p-4 my-8 rounded-xl border border-gray-300"
+      className="my-8 rounded-xl border border-gray-300 p-4"
       id="projects"
     >
       <h2 className="my-4 text-center text-4xl font-bold text-orange-500">
@@ -108,7 +108,7 @@ export function ProjectCard({
   description: string;
 }) {
   return (
-    <div className="rounded-b-2xl shadow-md hover:shadow-xl transition duration-300">
+    <div className="rounded-b-2xl shadow-md transition duration-300 hover:shadow-xl">
       <div className="group relative h-64 overflow-hidden rounded-t-xl">
         <Image
           src={imgUrl}

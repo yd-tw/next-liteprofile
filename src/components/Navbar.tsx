@@ -11,8 +11,8 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full mx-auto border-b border-gray-300 dark:border-gray-700 backdrop-blur bg-background/95">
-      <div className="container mx-auto h-16 flex flex-wrap items-center justify-between px-4 py-2">
+    <nav className="bg-background/95 sticky top-0 z-50 mx-auto w-full border-b border-gray-300 backdrop-blur dark:border-gray-700">
+      <div className="container mx-auto flex h-16 flex-wrap items-center justify-between px-4 py-2">
         <Link href={"/"} className="text-3xl font-semibold">
           {base.title}
         </Link>
@@ -22,7 +22,7 @@ export default function Navbar() {
               <li key={index}>
                 <Link
                   href={link.path}
-                  className="block rounded-sm py-2 pl-3 pr-4 text-gray-900 dark:text-gray-300 hover:text-gray-500 sm:text-xl"
+                  className="block rounded-sm py-2 pr-4 pl-3 text-gray-900 hover:text-gray-500 sm:text-xl dark:text-gray-300"
                 >
                   {link.title}
                 </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
             <li key={index}>
               <Link
                 href={link.path}
-                className="block rounded-sm py-2 pl-3 pr-4 text-gray-800 hover:text-gray-500 sm:text-xl md:p-0"
+                className="block rounded-sm py-2 pr-4 pl-3 text-gray-800 hover:text-gray-500 sm:text-xl md:p-0"
               >
                 {link.title}
               </Link>

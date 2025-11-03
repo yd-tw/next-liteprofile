@@ -52,7 +52,7 @@ export default function Page(props: { params: Promise<{ slug: string }> }) {
           }),
         }}
       />
-      <div className="max-w-prose mx-auto p-4 w-full border sm:rounded-xl sm:m-4 min-h-screen">
+      <div className="mx-auto min-h-screen w-full max-w-prose border p-4 sm:m-4 sm:rounded-xl">
         <h1 className="text-3xl font-bold">{post.metadata.title}</h1>
         <p className="text-gray-800">{post.metadata.publishedAt}</p>
         <div className="prose mt-4">

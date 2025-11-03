@@ -12,7 +12,7 @@ export default function BlogSection({ limit }: { limit?: number }) {
 
   return (
     <section
-      className="p-4 my-8 rounded-xl border border-gray-300"
+      className="my-8 rounded-xl border border-gray-300 p-4"
       id="contest"
     >
       <h2 className="my-4 text-center text-4xl font-bold text-orange-500">
@@ -23,20 +23,20 @@ export default function BlogSection({ limit }: { limit?: number }) {
           <Link
             key={post.slug}
             href={`/blogs/${post.slug}`}
-            className="flex flex-col bg-orange-50 shadow-sm rounded-2xl p-5 hover:shadow-md transition-shadow"
+            className="flex flex-col rounded-2xl bg-orange-50 p-5 shadow-sm transition-shadow hover:shadow-md"
           >
             <h2 className="text-2xl font-semibold text-black">
               {post.metadata.title}
             </h2>
-            <p className="text-gray-500 text-sm mt-1">
+            <p className="mt-1 text-sm text-gray-500">
               {post.metadata.publishedAt}
             </p>
-            <p className="text-gray-700 mt-3">{post.metadata.description}</p>
+            <p className="mt-3 text-gray-700">{post.metadata.description}</p>
             <div className="mt-4 flex flex-wrap gap-2">
               {post.metadata.tags?.map((tag: string) => (
                 <span
                   key={tag}
-                  className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded-full"
+                  className="rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-600"
                 >
                   #{tag}
                 </span>
@@ -46,10 +46,10 @@ export default function BlogSection({ limit }: { limit?: number }) {
         ))}
       </div>
       {limit && (
-        <div className="flex justify-center my-6">
+        <div className="my-6 flex justify-center">
           <Link
             href="/blogs"
-            className="px-6 py-3 text-white text-lg font-semibold bg-orange-500 rounded-full shadow-md hover:bg-orange-600 transition-colors"
+            className="rounded-full bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md transition-colors hover:bg-orange-600"
           >
             查看更多
           </Link>

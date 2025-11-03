@@ -18,7 +18,7 @@ export default function TabInterface() {
 
   return (
     <section
-      className="p-4 my-16 rounded-xl border border-gray-300"
+      className="my-16 rounded-xl border border-gray-300 p-4"
       id="tabinfo"
     >
       <div className="flex flex-col text-left">
