@@ -11,23 +11,23 @@ export const social: Social[] = [
     icon: "/icons/github-brands-solid.svg",
   },
   {
-    name: "Youtube: YD遊戲頻",
-    href: "https://www.youtube.com/@playeryd",
+    name: "Youtube:",
+    href: "https://www.youtube.com",
     icon: "/icons/youtube-brands-solid.svg",
   },
   {
-    name: "Facebook: 楊光地",
-    href: "https://www.facebook.com/profile.php?id=100022136377891",
+    name: "Facebook:",
+    href: "https://www.facebook.com",
     icon: "/icons/facebook-brands-solid.svg",
   },
   {
-    name: "Instagram: guangdiy",
-    href: "https://www.instagram.com/guangdiy/",
+    name: "Instagram:",
+    href: "https://www.instagram.com",
     icon: "/icons/instagram-brands-solid.svg",
   },
   {
-    name: "Threads: guangdiy",
-    href: "https://www.threads.net/@guangdiy",
+    name: "Threads:",
+    href: "https://www.threads.net",
     icon: "/icons/threads-brands-solid.svg",
   },
 ];

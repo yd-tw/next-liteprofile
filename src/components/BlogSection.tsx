@@ -22,7 +22,7 @@ export default function BlogSection({ limit }: { limit?: number }) {
         {posts.map((post) => (
           <Link
             key={post.slug}
-            href={`/blogs/${post.slug}`}
+            href={`/blog/${post.slug}`}
             className="flex flex-col rounded-2xl bg-orange-50 p-5 shadow-sm transition-shadow hover:shadow-md"
           >
             <h2 className="text-2xl font-semibold text-black">
@@ -48,7 +48,7 @@ export default function BlogSection({ limit }: { limit?: number }) {
       {limit && (
         <div className="my-6 flex justify-center">
           <Link
-            href="/blogs"
+            href="/blog"
             className="rounded-full bg-orange-500 px-6 py-3 text-lg font-semibold text-white shadow-md transition-colors hover:bg-orange-600"
           >
             查看更多

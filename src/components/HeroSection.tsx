@@ -5,7 +5,7 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
 import { hero } from "@/config/hero";
-import CountUp from "react-countup";
+import CountUp from "@/components/Countup";
 
 export default function HeroSection() {
   return (
@@ -40,7 +40,7 @@ export default function HeroSection() {
               關於我
             </Link>
             <Link
-              href="/blogs"
+              href="/blog"
               className="mt-3 inline-block w-32 rounded-full bg-linear-to-br from-orange-500 to-purple-500 px-1 py-1 text-white hover:bg-blue-600 sm:w-fit"
             >
               <span className="block rounded-full bg-black px-5 py-2 hover:bg-gray-800">
@@ -55,7 +55,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="col-span-4 mt-4 place-self-center lg:mt-0"
         >
-          <div className="relative h-[250px] w-[250px] rounded-full bg-gray-800 lg:h-[400px] lg:w-[400px]">
+          <div className="relative h-62.5 w-62.5 rounded-full bg-gray-800 lg:h-100 lg:w-100">
             <Image
               src="/images/YD-logo.svg"
               alt="hero image"

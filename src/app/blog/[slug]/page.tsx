@@ -44,10 +44,10 @@ export default function Page(props: { params: Promise<{ slug: string }> }) {
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${baseUrl}/blogs/${post.slug}`,
+            url: `${baseUrl}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "楊光地",
+              name: "YD",
             },
           }),
         }}

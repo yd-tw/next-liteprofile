@@ -5,7 +5,7 @@ import { useState } from "react";
 import { base } from "@/config/base";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [{ title: "部落格", path: "/blogs" }];
+const navLinks = [{ title: "部落格", path: "/blog" }];
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
