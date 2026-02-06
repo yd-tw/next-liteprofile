@@ -1,5 +1,5 @@
 {
-  "name": "next-liteprofile",
+  "name": "next-profile-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^16.1.6",
-    "motion": "^12.31.0",
+    "motion": "^12.33.0",
     "next": "^16.1.6",
     "next-staticblog": "^0.1.5",
     "react": "^19.2.4",
@@ -26,13 +26,13 @@
     "@iconify/react": "^5.2.1",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^22.19.8",
-    "@types/react": "^19.2.10",
+    "@types/node": "^24.10.11",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.6",
     "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.6.14",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.0",
     "typescript": "^5.9.3"
   }

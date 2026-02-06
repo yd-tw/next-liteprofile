@@ -1,15 +1,17 @@
 <div align="center">
   <a href="https://github.com/yd-tw/next-liteprofile">
     <picture>
-      <img alt="logo" src="https://www.kuang-ti.com/images/YD-logo.svg" height="64">
+      <img alt="logo" src="https://www.kuang-ti.com/logo.png" height="64">
     </picture>
   </a>
-  <h1>next-liteprofile</h1>
+  <h1>next-profile-template</h1>
   <a href="https://github.com/yd-tw/next-liteprofile/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/license-MIT-green"></a>
   <a href="https://github.com/yd-tw/next-liteprofile/blob/main/package.json"><img alt="version" src="https://img.shields.io/badge/Next.js-16-blue"></a>
   <a href="https://github.com/yd-tw/next-liteprofile/blob/main/package.json"><img alt="version" src="https://img.shields.io/badge/React-19-blue"></a>
   <a href="https://github.com/yd-tw/next-liteprofile/blob/main/package.json"><img alt="version" src="https://img.shields.io/badge/TailwindCSS-4-blue"></a>
 </div>
+
+> 專案原先為「next-liteprofile」，為提升命名識別度調整為「next-profile-template」。
 
 ## 介紹目錄
 

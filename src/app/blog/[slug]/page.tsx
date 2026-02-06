@@ -13,7 +13,7 @@ export async function generateMetadata(props: {
     title: post.metadata.title,
     description: post.metadata.description,
     openGraph: {
-      url: `/blogs/${params.slug}`,
+      url: `/blog/${params.slug}`,
       images: `/og?title=${post.metadata.title}&subtitle=${post.metadata.description}`,
       type: "article",
     },
