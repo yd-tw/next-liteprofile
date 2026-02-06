@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { base } from "@/config/base";
-import { LuMenu, LuX } from "react-icons/lu";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [{ title: "部落格", path: "/blogs" }];
 
@@ -37,14 +37,14 @@ export default function Navbar() {
               onClick={() => setNavbarOpen(true)}
               className="flex items-center rounded-sm border border-black px-3 py-2 text-black"
             >
-              <LuMenu className="h-6 w-6" />
+              <Menu className="h-6 w-6" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
               className="flex items-center rounded-sm border border-black px-3 py-2 text-black"
             >
-              <LuX className="h-6 w-6" />
+              <X className="h-6 w-6" />
             </button>
           )}
         </div>

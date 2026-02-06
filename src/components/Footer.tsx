@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { base } from "@/config/base";
-import pkg from "../../package.json";
-import { FaFacebook, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
+import pkg from "@/../package.json";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -15,26 +15,47 @@ export default function Footer() {
 
         <div className="flex space-x-6">
           <Link href="https://github.com/" aria-label="GitHub">
-            <FaGithub
-              size={24}
+            <Image
+              src="/icons/github-brands-solid.svg"
+              alt="GitHub"
+              width={24}
+              height={24}
               className="cursor-pointer transition duration-300 hover:text-gray-400"
             />
           </Link>
           <Link href="https://www.youtube.com/" aria-label="YouTube">
-            <FaYoutube
-              size={24}
+            <Image
+              src="/icons/youtube-brands-solid.svg"
+              alt="YouTube"
+              width={24}
+              height={24}
               className="cursor-pointer transition duration-300 hover:text-gray-400"
             />
           </Link>
           <Link href="https://www.facebook.com/" aria-label="Facebook">
-            <FaFacebook
-              size={24}
+            <Image
+              src="/icons/facebook-brands-solid.svg"
+              alt="Facebook"
+              width={24}
+              height={24}
               className="cursor-pointer transition duration-300 hover:text-gray-400"
             />
           </Link>
           <Link href="https://www.instagram.com/" aria-label="Instagram">
-            <FaInstagram
-              size={24}
+            <Image
+              src="/icons/instagram-brands-solid.svg"
+              alt="Instagram"
+              width={24}
+              height={24}
+              className="cursor-pointer transition duration-300 hover:text-gray-400"
+            />
+          </Link>
+          <Link href="https://www.threads.net" aria-label="Threads">
+            <Image
+              src="/icons/threads-brands-solid.svg"
+              alt="Threads"
+              width={24}
+              height={24}
               className="cursor-pointer transition duration-300 hover:text-gray-400"
             />
           </Link>
