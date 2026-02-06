@@ -13,29 +13,33 @@
 
 > 專案原先為「next-liteprofile」，為提升命名識別度調整為「next-profile-template」。
 
-## 介紹目錄
+快速配置，建立屬於自己的個人網站；零額外依賴項，成為你學習網站入門的最好教材。
 
-- [專案介紹](#專案介紹)
-- [技術細節](#技術細節)
-- [製作歷程](#製作歷程)
-- [使用方法](#使用方法)
+## 快速開始
 
-## 專案介紹
+執行下方指令，透過 `create-next-app` 直接安裝。
 
-快速配置，建立屬於自己的個人網站。
+```bash
+npx create-next-app@latest --example https://github.com/yd-tw/next-profile-template
+```
+
+接著運行開發伺服器即可。
+
+```bash
+npm run dev
+```
+
+---
+
+或者透過 Git 開始
+
+1. `git clone` 這個儲存庫
+2. 使用 `npm install` 來安裝依賴環境
+3. 使用 `npm run dev` 開啟 Node.js 開發伺服器
 
 ## 技術細節
 
 - React
 - Next.js
 - RWD
-
-## 製作歷程
-
-- 0.1.0 建立專案架構
-
-## 使用方法
-
-1. `clone`這個儲存庫
-2. 使用 `npm install` 來安裝依賴環境
-3. 使用 `npm run dev` 開啟 Node.js 測試伺服器
+- Blog
