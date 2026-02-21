@@ -1,4 +1,5 @@
-import { getAllPosts } from "next-staticblog";
+import { PostMeta } from "@/types/post";
+import { getAllPosts } from "next-posts";
 
 export const baseUrl = "https://example.codecat.tw";
 
@@ -17,7 +18,7 @@ export default async function sitemap() {
   }));
 
   // 部落格索引
-  const posts = getAllPosts();
+  const posts = getAllPosts<PostMeta>();
   posts.forEach((post) => {
     links.push({
       url: `${baseUrl}/blog/${post.slug}`,

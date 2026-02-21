@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { getAllPosts } from "next-staticblog";
+import { getAllPosts } from "next-posts";
+import { PostMeta } from "@/types/post";
 
 export default function BlogSection({ limit }: { limit?: number }) {
-  const posts = getAllPosts()
+  const posts = getAllPosts<PostMeta>()
     .sort(
       (a, b) =>
         new Date(b.metadata.publishedAt).getTime() -

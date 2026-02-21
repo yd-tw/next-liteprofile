@@ -36,13 +36,13 @@ export const projects: Project[] = [
     intro: "https://www.kuang-ti.com",
   },
   {
-    id: "next-staticblog",
-    title: "NPM包 - next-staticblog",
+    id: "next-posts",
+    title: "NPM包 - next-posts",
     description:
       "提供開箱即用的部落格頁面，簡化相關配置。曾達到每週數百次的安裝量。",
-    image: "/images/projects/next-staticblog.png",
+    image: "/images/projects/next-posts.png",
     tag: ["精選", "服務"],
-    intro: "https://www.npmjs.com/package/next-staticblog",
+    intro: "https://www.npmjs.com/package/next-posts",
   },
   {
     id: "discord-templatebot",
